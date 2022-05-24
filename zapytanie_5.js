@@ -1,0 +1,1 @@
+printjson(db.people.find({"birth_date":{$gte:"2000-01-01T00:00:00Z", $lt:"2099-12-31T00:00:01Z"}},{first_name:1, last_name:1, location:{city:1}, birth_date:1}).toArray())
